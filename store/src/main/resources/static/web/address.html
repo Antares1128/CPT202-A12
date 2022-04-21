@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="icon" href="1.ico">
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="renderer" content="webkit" />
+		<title>Online Store</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrapold.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordlayout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordtop.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordfooter.css" />
+		<script src="../js/adddel.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body background="../images/index/密码背景图1.png">
+
+		<header class="header">
+
+			<div class="row">
+				<img style="width: 120px" src="../images/index/12.png" />
+                <img style="width: 200px"src="../images/index/ok1.png" />
+
+				<div class="col-md-9 top-item">
+					<ul class="list-inline pull-right">
+						<li><a href=""><span class="fa fa-heart"></span>&nbsp;Favourite</a></li>
+						<li class="li-split">|</li>
+						<li><a href=""><span class="fa fa-file-text"></span>&nbsp;Order</a></li>
+						<li class="li-split">|</li>
+						<li><a href=""><span class="fa fa-cart-plus"></span>&nbsp;Shopping Cart</a></li>
+						<li class="li-split">|</li>
+						<li>
+
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+									<span id="top-dropdown-btn"><span class="fa fa-gears"></span>&nbsp;Management <span class="caret"></span></span>
+								</button>
+								<ul class="dropdown-menu top-dropdown-ul" role="menu">
+									<li><a href="password.html">Change the password</a></li>
+									<li><a href="userdata.html">Personal profile</a></li>
+									<li><a href="upload.html">Upload profile photo</a></li>
+									<li><a href="address.html">Address management</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="li-split">|</li>
+						<li><a href="login.html"><span class="fa fa-user"></span>&nbsp;Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="row top-nav">
+			<div class="col-md-6">
+				<ul class="nav nav-pills">
+					<li>
+						<a href="#"></a>
+					</li>
+					<li class="active"><a href="index.html"><span class="fa fa-home"></span></a></li>
+					<li><a href="#">Special Offer</a></li>
+					<li><a href="#">Discount Coupon</a></li>
+					<li><a href="#">VIP</a></li>
+					<li><a href="#">Delivery</a></li>
+					<li><a href="#">Supermarket</a></li>
+				</ul>
+			</div>
+			<div class="col-md-5">
+				<form action="" class="form-inline pull-right" role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="search" name="search" placeholder="Please enter the product name to search">
+					</div>
+					<button type="submit" class="btn btn-default btn-sm"><span class="fa fa-search"></span></button>
+				</form>
+			</div>
+		</div>
+
+		<div class="container">
+			
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<ul class="nav nav-tabs">
+						<li><a href="password.html">Change password</a></li>
+						<li><a href="userdata.html">View profile</a></li>
+						<li><a href="upload.html">Upload profile photo</a></li>
+						<li class="active"><a href="#">Address</a></li>
+					</ul>
+					<div class="panel-body">
+
+						<table class="table table-striped">
+							<caption>Address List</caption>
+							<thead>
+								<tr>
+									<th>Address Type</th>
+									<th>Name</th>
+									<th>Address</th>
+									<th>Phone</th>
+									<th colspan="3">Operation</th>
+								</tr>
+							</thead>
+							<tbody id="address-list">
+								<tr>
+									<td>Home</td>
+									<td>Tom</td>
+									<td>Liverpool, L69 3BX, UK</td>
+									<td>+44(0)1517942000</td>
+									<td><a class="btn btn-xs btn-info"><span class="fa fa-edit"></span> Change</a></td>
+									<td><a class="btn btn-xs add-del btn-info"><span class="fa fa-trash-o"></span> Delete</a></td>
+									<td><input type="button" onclick="delCartItem(this)" class="cart-del btn btn-default btn-xs" value="Set Default" /></td>
+									<td><a class="btn btn-xs add-def btn-default">Set Default</a></td>
+								</tr>
+								<tr>
+									<td>Firm</td>
+									<td>Tom</td>
+									<td>Liverpool, L69 3BX, UK</td>
+									<td>+44(0)1517942000</td>
+									<td><a class="btn btn-xs btn-info"><span class="fa fa-edit"></span> Change</a></td>
+									<td><a class="btn btn-xs add-del btn-info"><span class="fa fa-trash-o"></span> Delete</a></td>
+									<td><a class="btn btn-xs add-def btn-default">Set Default</a></td>
+								</tr>
+
+							</tbody>
+						</table>
+						<a href="addAddress.html" class="btn btn-sm btn-primary"><span class="fa fa-plus"></span>Add new address</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+
+			<div class="container beforeBottom">
+				<div class="col-md-offset-1 col-md-3">
+					<div></div>
+					<div></div>
+				</div>
+				
+					<li>
+						<a  style="color: blue" href="#">About us </a>|
+						<a style="color: blue"  href="#">Contact us </a>|
+						<a style="color: blue" href="#">Guide </a>|
+						<a style="color: blue" href="#">Merchant </a>|
+						<a style="color: blue" href="#">Help</a>|
+						<a style="color: blue" href="#">Community</a>
+					</li>
+				
+				
+			</div>
+
+			<div class="col-md-12 text-center bottom">
+				THIS ONLINE STORE WEB APP FROM GROUP A12 IN CPT202
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				showAddressList();
+			});
+
+			function showAddressList() {
+				$("#address-list").empty();
+				$.ajax({
+					url: "/addresses",
+					type: "GET",
+					dataType: "JSON",
+					success: function (json) {
+						let list = json.data;
+						for (let i = 0; i < list.length; i++) {
+							console.log(list[i].name);
+							let address = '<tr>'
+									+ '<td>#{tag}</td>'
+									+ '<td>#{name}</td>'
+									+ '<td>#{province}#{city}#{area}#{address}</td>'
+									+ '<td>#{phone}</td>'
+									+ '<td><a class="btn btn-xs btn-info"><span class="fa fa-edit"></span> Change</a></td>'
+									+ '<td><a onclick="deleteByAid(#{aid})" class="btn btn-xs add-del btn-info"><span class="fa fa-trash-o"></span>Delete</a></td>'
+									+ '<td><a onclick="setDefault(#{aid})" class="btn btn-xs add-def btn-default">Set as defualt</a></td>'
+									+ '</tr>';
+
+							address = address.replace(/#{aid}/g, list[i].aid);
+							address = address.replace(/#{tag}/g, list[i].tag);
+							address = address.replace("#{name}", list[i].name);
+							address = address.replace("#{province}", list[i].provinceName);
+							address = address.replace("#{city}", list[i].cityName);
+							address = address.replace("#{area}", list[i].areaName);
+							address = address.replace("#{address}", list[i].address);
+							address = address.replace("#{phone}", list[i].phone);
+
+							$("#address-list").append(address);
+						}
+						$(".add-def:eq(0)").hide();
+					}
+				});
+			}
+
+			function setDefault(aid) {
+				$.ajax({
+					url: "/addresses/" + aid + "/set_default",
+					type: "POST",
+					dataType: "JSON",
+					success: function(json) {
+						if (json.state == 200) {
+							showAddressList();
+						} else {
+							alert("Failed！" + json.message);
+						}
+					},
+					error: function(xhr) {
+						alert("Please relogin to system！HTTP code：" + xhr.status);
+						location.href = "login.html";
+					}
+				});
+			}
+
+
+		</script>
+	</body>
+
+</html>

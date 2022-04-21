@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="1.ico">
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="renderer" content="webkit" />
+		<title>Welcome to login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/top.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+		<script src="../bootstrap3/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/autoLogin.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+		<header class="header">
+			<img src="../images/index/12.png" alt="" />
+			<img src="../images/index/ok1.png" alt="" />
+			<span class="pull-right"><img src="../images/index/ok2.png" alt="" /></span>
+		</header>
+
+		<div class="container mycontent text-left">
+
+			<div class="loginDiv">
+				<p>Account Login</p>
+
+				<form id="form-login" action="index.html"  class="form-horizontal" role="form">
+
+					<div class="form-group">
+						<label for="username" class="col-md-3 control-label">Username:</label>
+						<div class="col-md-8">
+							<input name="username" type="text" class="form-control" id="username"  placeholder="Username">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="password" class="col-md-3 control-label"> Password:</label>
+						<div class="col-md-8">
+							<input name="password" type="text" class="form-control" id="password"  placeholder="Password">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-md-offset-3 col-md-6">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" id="auto">Automatically login
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-3 control-label"></label>
+						<div class="col-md-8">
+							<input id="btn-login" class="btn btn-primary" type="button" value="Login" />
+							<span class="pull-right"><small>No account?</small><a href="register.html">Register</a></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer">
+			<p>
+			 <a href=" ">About Us </a>|
+			 <a href="#">Contact Us </a>|
+		 <a href="#">Guide </a>|
+	 <a href="#">Merchant </a>|
+     <a href="#">Help</a>|
+     <a href="#">Community</a>
+ </p >
+ <p class="copyright">THIS IS ONLINE STORE WEB APP FROM GROUP A12 IN CPT202</p >
+</div>
+
+		<script type="text/javascript">
+			$("#btn-login").click(function() {
+				$.ajax({
+					url: "/users/login",
+					type: "POST",
+					data: $("#form-login").serialize(),
+					dataType: "json",
+					success: function(json) {
+						if (json.state == 200) {
+							alert("Login success！");
+							location.href = "index.html";
+							$.cookie("avatar",json.data.avatar, {expires: 7});
+						} else {
+							alert("Login fail！" + json.message);
+						}
+					}
+
+			});
+		});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+/*登录页的半透明层的样式*/
+.loginDiv {
+	height: 280px;
+	width: 500px;
+	background-color: rgba(255, 255, 255, 0.85);
+	float: right;
+	margin: 130px 60px 0 0;
+	border-radius: 10px;
+	color: #666666;
+	padding: 8px;
+}
+.footer {
+	 text-align: center;
+	padding-top: 20px;
+}
+.footer a {
+	padding: 0 10px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	 font-size: medium;
+}
+.footer .copyright{
+	 padding-top: 15px;
+	 padding-bottom: 40px;
+	 font-size:medium;
+	 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

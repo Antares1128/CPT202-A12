@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="1.ico">
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="renderer" content="webkit" />
+		<title>Welcome to register</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/top.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Registerindex.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/reg.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	</head>
+	<body>
+
+		<header class="header">
+			<img src="../images/index/12.png" alt="" />
+			<span class="pull-right"><b>Welcome To Register Online Store</b></span>
+		</header>
+
+		<div class="container mycontent text-left">
+
+			<div class="regDiv">
+				<p>Account Register</p>
+
+				<form id="form-reg" class="form-horizontal" role="form">
+
+					<div class="form-group">
+						<label class="col-md-3 control-label">Username:</label>
+						<div class="col-md-8">
+							<input name="username" type="text" class="form-control" placeholder="please enter the name">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-3 control-label"> Password:</label>
+						<div class="col-md-8">
+							<input name="password" type="text" class="form-control" placeholder="please enter the password">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-3 control-label"> Confirm:</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" placeholder="please enter the password again">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-md-3 control-label"></label>
+						<div class="col-md-8">
+							<input id="btn-reg" class="btn btn-primary" type="button" value="Register" />
+							<span class="pull-right"><small>Existing account? </small><a href="login.html">Login Now</a></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer class="footer">
+
+			<div class="container beforeBottom">
+				<div class="col-md-offset-1 col-md-3">
+					<div></div>
+					<div></div>
+				</div>
+				
+					<li>
+						<a href="#">About us </a>|
+						<a href="#">Contact us </a>|
+						<a href="#">Guide </a>|
+						<a href="#">Merchat </a>|
+						<a href="#">Help</a>|
+						<a href="#">Chinese Site</a>
+					</li>
+				
+				
+			</div>
+
+			<div class="col-md-12 text-center bottom">
+				THIS ONLINE STORE WEB APP FROM GROUP A12 IN CPT202
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+			$("#btn-reg").click(function() {
+
+				console.log($("#form-reg").serialize());
+				$.ajax({
+					url: "/users/reg",
+					type: "POST",
+					data: $("#form-reg").serialize(),
+					dataType: "JSON",
+					success: function(json) {
+						if (json.state == 200) {
+							alert("Register success！");
+					} else {
+							alert("Register fail！" + json.message);
+				   }
+			    },
+					error: function (xhr){
+						alert("Unknown error！"+ xhr.status);
+					}
+			    });
+			});
+		</script>
+	</body>
+
+</html>

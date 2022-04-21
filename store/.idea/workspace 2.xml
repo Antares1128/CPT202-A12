@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a436110-5fea-4641-89ec-deceb0aa60bf" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="26IDupGqZBkcVRW9KCHboiJX1mQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/cy/store/service" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/cy/store/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cy/store/service/impl" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cy/store/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/cy/store/service/ex" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/cy/store/mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/cy/store" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cy.store.service" />
+      <recent name="com.cy.store.mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApplicationTests">
+    <configuration name="AddressMapperTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cy.store.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cy.store.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.cy.store.mapper.AddressMapperTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cy.store.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cy.store.service" />
+      <option name="MAIN_CLASS_NAME" value="com.cy.store.service.AddressServiceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressServiceTests.addNewAddress" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cy.store.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cy.store.service" />
+      <option name="MAIN_CLASS_NAME" value="com.cy.store.service.AddressServiceTests" />
+      <option name="METHOD_NAME" value="addNewAddress" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="store" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cy.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cy.store" />
+      <option name="MAIN_CLASS_NAME" value="com.cy.store.ApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="store" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cy.store.StoreApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApplicationTests" />
+        <item itemvalue="Spring Boot.StoreApplication" />
+        <item itemvalue="JUnit.AddressMapperTests" />
+        <item itemvalue="JUnit.AddressServiceTests" />
+        <item itemvalue="JUnit.AddressServiceTests.addNewAddress" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a436110-5fea-4641-89ec-deceb0aa60bf" name="Changes" comment="" />
+      <created>1647102436649</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647102436649</updated>
+      <workItem from="1647102437743" duration="1200000" />
+      <workItem from="1647334788972" duration="139000" />
+      <workItem from="1648437751921" duration="708000" />
+      <workItem from="1648438973495" duration="8913000" />
+      <workItem from="1648452407817" duration="554000" />
+      <workItem from="1648452984027" duration="505000" />
+      <workItem from="1648453511347" duration="626000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

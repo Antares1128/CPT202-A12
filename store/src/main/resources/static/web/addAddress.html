@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="icon" href="1.ico">
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="renderer" content="webkit" />
+		<title>Online Store</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrapold.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordlayout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordtop.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordfooter.css" />
+		<!--
+		<script type="text/javascript" src="../js/distpicker.data.js"></script>
+		<script type="text/javascript" src="../js/distpicker.js"></script>
+		-->
+	</head>
+
+	<body background="../images/index/密码背景图1.png">
+
+		<header class="header">
+
+			<div class="row">
+				<img style="width: 120px" src="../images/index/12.png" />
+                <img style="width: 200px"src="../images/index/ok1.png" />
+
+				<div class="col-md-9 top-item">
+					<ul class="list-inline pull-right">
+						<li><a href=""><span class="fa fa-heart"></span>&nbsp;Favourite</a></li>
+						<li class="li-split">|</li>
+						<li><a href=""><span class="fa fa-file-text"></span>&nbsp;Order</a></li>
+						<li class="li-split">|</li>
+						<li><a href=""><span class="fa fa-cart-plus"></span>&nbsp;Shopping Cart</a></li>
+						<li class="li-split">|</li>
+						<li>
+
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+									<span id="top-dropdown-btn"><span class="fa fa-gears"></span>&nbsp;Management <span class="caret"></span></span>
+								</button>
+								<ul class="dropdown-menu top-dropdown-ul" role="menu">
+									<li><a href="password.html">Change the password</a></li>
+									<li><a href="userdata.html">Personal profile</a></li>
+									<li><a href="upload.html">Upload profile photo</a></li>
+									<li><a href="address.html">Address management</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="li-split">|</li>
+						<li><a href="login.html"><span class="fa fa-user"></span>&nbsp;Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="row top-nav">
+			<div class="col-md-6">
+				<ul class="nav nav-pills">
+					<li>
+						<a href="#"></a>
+					</li>
+					<li class="active"><a href="index.html"><span class="fa fa-home"></span></a></li>
+					<li><a href="#">Special Offer</a></li>
+					<li><a href="#">Discount Coupon</a></li>
+					<li><a href="#">VIP</a></li>
+					<li><a href="#">Delivery</a></li>
+					<li><a href="#">Supermarket</a></li>
+				</ul>
+			</div>
+			<div class="col-md-5">
+				<form action="" class="form-inline pull-right" role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="search" name="search" placeholder="Please enter the product name to search">
+					</div>
+					<button type="submit" class="btn btn-default btn-sm"><span class="fa fa-search"></span></button>
+				</form>
+			</div>
+		</div>
+
+		<div class="container">
+			
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<ul class="nav nav-tabs">
+						<li><a href="password.html">Change password</a></li>
+						<li><a href="userdata.html">View profile</a></li>
+						<li><a href="upload.html">Upload profile photo</a></li>
+						<li class="active"><a href="#">Address</a></li>
+					</ul>
+					<div class="panel-body">
+
+						<form id="form-add-new-address" class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-md-2 control-label"><span class="txtred">*</span>Consignee：</label>
+								<div class="col-md-8">
+									<input name="name" type="text" class="form-control" placeholder="Please enter the consignee name">
+								</div>
+							</div>
+							<div class="address_content" data-toggle="distpicker">
+								<div class="form-group">
+									<label class="col-md-2 control-label"><span class="txtred">*</span>Province/Municipality：</label>
+									<div class="col-md-3">
+										<select id="province-list" name="provinceCode" class="form-control" data-province="---- Choose Province ----"></select>
+									</div>
+									<label class="col-md-2 control-label"><span class="txtred">*</span>City：</label>
+									<div class="col-md-3">
+										<select id="city-list" name="cityCode" class="form-control" data-city="---- Choose City ----"></select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-2 control-label"><span class="txtred">*</span>Country：</label>
+									<div class="col-md-3">
+										<select id="area-list" name="areaCode" class="form-control" data-district="---- Choose Country ----"></select>
+									</div>
+									<label class="col-md-2 control-label">Postcode：</label>
+									<div class="col-md-3">
+										<input name="zip" type="text" class="form-control" placeholder="Please enter the postcode">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label"><span class="txtred">*</span>Detailed address：</label>
+								<div class="col-md-8">
+									<textarea name="address" class="form-control" rows="3" placeholder="Please enter the detailed address"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label"><span class="txtred">*</span>Phone：</label>
+								<div class="col-md-3">
+									<input name="phone" type="text" class="form-control" placeholder="Please enter the phone">
+								</div>
+								<label class="col-md-2 control-label">Fix phone：</label>
+								<div class="col-md-3">
+									<input name="tel" type="text" class="form-control" placeholder="Please enter the fix phone">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">Address type：</label>
+								<div class="col-md-8">
+									<input name="tag" type="text" class="form-control" placeholder="Please enter the type of address">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label"><a href="address.html">Back</a>&nbsp;&nbsp;&nbsp;</label>
+								<div class="col-sm-10">
+									<input id="btn-add-new-address" type="button" class="col-md-1 btn btn-primary" value="Save" />
+									<input type="reset" class="col-md-offset-1 col-md-1 btn btn-primary" value="Reset" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+
+			<div class="container beforeBottom">
+				<div class="col-md-offset-1 col-md-3">
+					<div></div>
+					<div></div>
+				</div>
+				
+					<li>
+						<a  style="color: blue" href="#">About us </a>|
+						<a style="color: blue"  href="#">Contact us </a>|
+						<a style="color: blue" href="#">Guide </a>|
+						<a style="color: blue" href="#">Merchant </a>|
+						<a style="color: blue" href="#">Help</a>|
+						<a style="color: blue" href="#">Community</a>
+					</li>
+				
+				
+			</div>
+
+			<div class="col-md-12 text-center bottom">
+				THIS ONLINE STORE WEB APP FROM GROUP A12 IN CPT202
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+
+
+			let defaultOption = "<option value='0'>Please choose</option>";
+			$(document).ready(function (){
+				showProvinceList();
+				$("#city-list").append(defaultOption);
+				$("#area-list").append(defaultOption);
+			});
+
+			$("#city-list").change(function () {
+
+				let parent = $("#city-list").val();
+
+				$("area-list").empty();
+
+				$("area-list").append(defaultOption);
+
+				if(parent ==0){
+					return;
+				}
+
+				$.ajax({
+					url: "/districts",
+					type: "GET",
+					data: "parent="+ parent,
+					dataType: "JSON",
+					success: function (json) {
+						if (json.state == 200) {
+							let list = json.data;
+							for(let i = 0; i < list.length; i++){
+								let opt =
+										"<option value ='"+list[i].code+"'>"+list[i].name+"</option>";
+								$("#area-list").append(opt);
+							}
+						} else {
+							alert("Failed" + json.message);
+						}
+					}
+				});
+			});
+
+			$("#province-list").change(function () {
+
+				let parent = $("#province-list").val();
+				$("city-list").empty();
+				$("area-list").empty();
+
+				$("city-list").append(defaultOption);
+				$("area-list").append(defaultOption);
+
+				if(parent ==0){
+					return;
+				}
+
+				$.ajax({
+					url: "/districts",
+					type: "GET",
+					data: "parent="+ parent,
+					dataType: "JSON",
+					success: function (json) {
+						if (json.state == 200) {
+							let list = json.data;
+							for(let i = 0; i < list.length; i++){
+								let opt =
+										"<option value ='"+list[i].code+"'>"+list[i].name+"</option>";
+								$("#city-list").append(opt);
+							}
+						} else {
+							alert("Faliled" + json.message);
+						}
+					}
+				});
+			});
+
+			function showProvinceList(){
+				$("#province-list").append(defaultOption);
+				$.ajax({
+					url: "/districts",
+					type: "POST",
+					data: "parent=86",
+					dataType: "JSON",
+					success: function (json) {
+						if (json.state == 200) {
+							let list = json.data;
+							for(let i = 0; i < list.length; i++){
+								let opt =
+										"<option value ='"+list[i].code+"'>"+list[i].name+"</option>";
+								$("#province-list").append(opt);
+							}
+						} else {
+							alert("Failed" + json.message);
+						}
+					}
+				});
+			}
+
+			$("#btn-add-new-address").click(function() {
+				$.ajax({
+					url: "/addresses/add_new_address",
+					type: "POST",
+					data: $("#form-add-new-address").serialize(),
+					dataType: "JSON",
+					success: function(json) {
+						if (json.state == 200) {
+							alert("Success！");
+						} else {
+							alert("Failed！" + json.message);
+						}
+					},
+					error: function(xhr) {
+						alert("Please relogin to system！HTTP code：" + xhr.status);
+						location.href = "login.html";
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

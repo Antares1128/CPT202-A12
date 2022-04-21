@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="icon" href="1.ico">
+		<meta charset="UTF-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<meta name="renderer" content="webkit" />
+		<title>Online Store</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrapold.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordlayout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordtop.css" />
+		<link rel="stylesheet" type="text/css" href="../css/passwordfooter.css" />
+	</head>
+
+	<body background="../images/index/密码背景图1.png">
+
+		<header class="header">
+
+			<div class="row">
+				<img style="width: 120px" src="../images/index/12.png" />
+                <img style="width: 200px"src="../images/index/ok1.png" />
+
+				<div class="col-md-9 top-item">
+					<ul class="list-inline pull-right">
+						<li><a href=""><span class="fa fa-heart"></span>&nbsp;Favourite</a></li>
+						<li class="li-split">|</li>
+						<li><a href=""><span class="fa fa-file-text"></span>&nbsp;Order</a></li>
+						<li class="li-split">|</li>
+						<li><a href=""><span class="fa fa-cart-plus"></span>&nbsp;Shopping Cart</a></li>
+						<li class="li-split">|</li>
+						<li>
+
+							<div class="btn-group">
+								<button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+									<span id="top-dropdown-btn"><span class="fa fa-gears"></span>&nbsp;Management <span class="caret"></span></span>
+								</button>
+								<ul class="dropdown-menu top-dropdown-ul" role="menu">
+									<li><a href="password.html">Change the password</a></li>
+									<li><a href="userdata.html">Personal profile</a></li>
+									<li><a href="upload.html">Upload profile photo</a></li>
+									<li><a href="address.html">Address management</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="li-split">|</li>
+						<li><a href="login.html"><span class="fa fa-user"></span>&nbsp;Login</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="row top-nav">
+			<div class="col-md-6">
+				<ul class="nav nav-pills">
+					<li>
+						<a href="#"></a>
+					</li>
+					<li class="active"><a href="index.html"><span class="fa fa-home"></span></a></li>
+					<li><a href="#">Special Offer</a></li>
+					<li><a href="#">Discount Coupon</a></li>
+					<li><a href="#">VIP</a></li>
+					<li><a href="#">Delivery</a></li>
+					<li><a href="#">Supermarket</a></li>
+				</ul>
+			</div>
+			<div class="col-md-5">
+				<form action="" class="form-inline pull-right" role="form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="search" name="search" placeholder="Please enter the product name to search">
+					</div>
+					<button type="submit" class="btn btn-default btn-sm"><span class="fa fa-search"></span></button>
+				</form>
+			</div>
+		</div>
+
+		<div class="container">
+			
+			<div class="col-md-12	">
+				<div class="panel panel-default">
+					<ul class="nav nav-tabs">
+						<li><a href="password.html">Change password</a></li>
+						<li class="active"><a href="#">View profile</a></li>
+						<li><a href="upload.html">Upload profile photo</a></li>
+						<li><a href="address.html">Address</a></li>
+					</ul>
+					<div class="panel-body">
+
+						<form id="form-change-info" class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-md-2 control-label">User name：</label>
+								<div class="col-md-8">
+									<input id="username" type="text" class="form-control" value="孙悟空" readonly="readonly">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">Phone number：</label>
+								<div class="col-md-8">
+									<input `id="phone" name="phone" type="text" class="form-control" placeholder="请输入电话号码" value="13311311313">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">E-mail：</label>
+								<div class="col-md-8">
+									<input id="email" name="email" type="text" class="form-control" placeholder="请输入电子邮箱" value="sunwk@qq.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-2 control-label">Gendre：</label>
+								<div class="col-md-8">
+									<label class="radio-inline">
+										<input id="gender-male" type="radio" name="gender" value="1">male
+									</label>
+									<label class="radio-inline">
+										<input id="gender-female" type="radio" name="gender" value="0">female
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<input id="btn-change-info" type="button" class="btn btn-primary" value="Confirm" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+
+			<div class="container beforeBottom">
+				<div class="col-md-offset-1 col-md-3">
+					<div></div>
+					<div></div>
+				</div>
+				
+					<li>
+						<a  style="color: blue" href="#">About us </a>|
+						<a style="color: blue"  href="#">Contact us </a>|
+						<a style="color: blue" href="#">Guide </a>|
+						<a style="color: blue" href="#">Merchant </a>|
+						<a style="color: blue" href="#">Help</a>|
+						<a style="color: blue" href="#">Community</a>
+					</li>
+				
+				
+			</div>
+
+			<div class="col-md-12 text-center bottom">
+				THIS ONLINE STORE WEB APP FROM GROUP A12 IN CPT202
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$.ajax({
+					url: "/users/get_by_uid",
+					type: "GET",
+					dataType: "json",
+					success: function(json) {
+						if (json.state == 200) {
+							console.log("username=" + json.data.username);
+							console.log("phone=" + json.data.phone);
+							console.log("email=" + json.data.email);
+							console.log("gender=" + json.data.gender);
+
+							$("#username").val(json.data.username);
+							$("#phone").val(json.data.phone);
+							$("#email").val(json.data.email);
+
+							let radio = json.data.gender == 0 ? $("#gender-female") : $("#gender-male");
+							radio.prop("checked", "checked");
+						} else {
+							alert("Failed！" + json.message);
+						}
+					}
+				});
+			});
+
+			$("#btn-change-info").click(function() {
+				$.ajax({
+					url: "/users/change_info",
+					type: "POST",
+					data: $("#form-change-info").serialize(),
+					dataType: "json",
+					success: function(json) {
+						if (json.state == 200) {
+							alert("Success！");
+							location.href = "userdata.html";
+						} else {
+							alert("Failed！" + json.message);
+						}
+					},
+					error: function(xhr) {
+						alert("Please relogin to system！HTTP code：" + xhr.status);
+						location.href = "login.html";
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>
